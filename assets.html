@@ -23,8 +23,8 @@
                 <ul>
                     <li><a href="dashboard.html">Dashboard</a></li>
                     <li><a href="assets.html" class = "active">Assets</a></li>
-                    <li><a href="#">Device Requests</a></li>
-                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="requests.html">Device Requests</a></li>
+                    <li><a href="maintenance.html">Maintenance</a></li>
                     <li><a href="#">Reports</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
@@ -50,7 +50,7 @@
             <button>Assigned</button>
             <button>Under Maintenance</button>
             <button>In Storage</button>
-            <button>Diposed</button>
+            <button>Disposed</button>
            </div>
            
            <div class="table-container">
@@ -59,6 +59,7 @@
                     <tr>
                         <th>Asset Tag</th>
                         <th>Device</th>
+                        <th>Brand</th>
                         <th>Status</th>
                         <th>Assigned To</th>
                         <th>Location</th>
@@ -70,6 +71,7 @@
                      <tr>
                         <td>ICT-001</td>
                         <td>Laptop</td>
+                        <td>ASUS</td>
                         <td>
                             <span class ="status maintenance">
                                 Under Maintenance
@@ -78,13 +80,15 @@
                         <td>Majed Alotibi</td>
                         <td>ICT Workshop</td>
                         <td>
-                            <button class="action-btn">Manage</button>
+                            <button class="manage-btn">Manage</button>
                         </td>
                     </tr>
 
                     <tr>
                         <td>ICT-002</td>
-                        <td>PC-HP</td>
+                        <td>PC</td>
+                        <td>HP</td>
+
                         <td>
                             <span class ="status maintenance">
                                 Under Maintenance
@@ -93,13 +97,14 @@
                         <td>Hassan Albuainain</td>
                         <td>ICT Workshop</td>
                         <td>
-                            <button class="action-btn">Manage</button>
+                            <button class="manage-btn">Manage</button>
                         </td>
                     </tr>
 
                     <tr>
                         <td>ICT-003</td>
                         <td>Laptop</td>
+                        <td>Lenovo</td>
                         <td>
                             <span class ="status storage">
                                 In Storage
@@ -108,13 +113,14 @@
                         <td>-</td>
                         <td>Storage</td>
                         <td>
-                            <button class="action-btn">Manage</button>
+                            <button class="manage-btn">Manage</button>
                         </td>
                     </tr>
 
                     <tr>
                         <td>ICT-004</td>
-                        <td>Laptop</td>
+                        <td>PC</td>
+                        <td>Dell</td>
                         <td>
                             <span class ="status assigned">
                                 Assigend
@@ -123,7 +129,23 @@
                         <td>Hadeel Alshammari</td>
                         <td>Web Development Office</td>
                         <td>
-                            <button class="action-btn">Manage</button>
+                            <button class="manage-btn">Manage</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>ICT-005</td>
+                        <td>Router</td>
+                        <td>-</td>
+                        <td>
+                            <span class ="status disposed">
+                                Disposed
+                            </span> 
+                        </td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            <button class="manage-btn">Manage</button>
                         </td>
                     </tr>
 
