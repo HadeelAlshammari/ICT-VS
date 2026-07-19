@@ -25,7 +25,7 @@
                     <li><a href="assets.html">Assets</a></li>
                     <li><a href="requests.html" class = "active">Device Requests</a></li>
                     <li><a href="maintenance.html">Maintenance</a></li>
-                    <li><a href="#">Reports</a></li>
+                    <li><a href="reports.html">Reports</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
             </nav>
@@ -40,7 +40,83 @@
                 </div>
             </header>
 
-            
+            <div class ="toolbar">
+                <input type = "text" placeholder="Search Requests...">
+                <button class = "add-btn">+ New Request</button>
+            </div>
+
+            <div class="filters">
+                <button class="active">All</button>
+                <button>Pending</button>
+                <button>In Progress</button>
+                <button>Approved</button>
+                <button>Rejected</button>
+                <button>Completed</button>
+
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Employee</th>
+                            <th>Department</th>
+                            <th>Requested Device</th>
+                            <th>Status</th>
+                            <th>Responsible</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <td>REQ-001</td>
+                            <td>Nawaf</td>
+                            <td>HR</td>
+                            <td>Laptop</td>
+                            <td>
+                                <span class ="status approved">
+                                    Approved      
+                                </span>
+                            </td>
+                            <td>Majed Alotaibi</td>
+                            <td>
+                                <a href="manage-request.html"><button class="manage-btn">Manage</button></a>
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <td>REQ-002</td>
+                            <td>Ahmed</td>
+                            <td>Finance</td>
+                            <td>PC</td>
+                            <td>
+                                <span class ="status in-progress">
+                                    In Progress      
+                                </span>
+                            </td>
+                            <td>Hassan Alotaibi</td>
+                            <td><a href="manage-request.html"><button class="manage-btn">Manage</button></a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>REQ-003</td>
+                            <td>Sara</td>
+                            <td>Administration</td>
+                            <td>Laptop</td>
+                            <td>
+                                <span class ="status pending">
+                                    Pending      
+                                </span>
+                            </td>
+                            <td>_</td>
+                            <td><a href="manage-request.html"><button class="manage-btn">Manage</button></a></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
 
         </main>
     </div>

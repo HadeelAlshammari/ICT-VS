@@ -335,3 +335,23 @@ td{
 .manage-btn:hover{
     background-color: #003F78;
 }
+
+.approved{
+    background-color: #0057A4;
+}
+
+.pending{
+    background-color: #ff9900;
+}
+
+.in-progress{
+    background-color: #6C757d;
+}
+
+.rejected{
+    background-color: #dc3545;
+}
+
+.completed{
+    background-color: #28a745;
+}
