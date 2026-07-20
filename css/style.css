@@ -174,10 +174,21 @@ nav ul li a:hover {
     
 }
 
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
 .card p {
     font-size: 36px;
     font-weight: bold;
     color: #ff9900;
+}
+
+.card label{
+    font-size: 14px;
+    color: #333;
 }
 
 .asset-table {
@@ -355,3 +366,14 @@ td{
 .completed{
     background-color: #28a745;
 }
+
+.save-btn{
+    background-color: #0057A4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
