@@ -40,7 +40,114 @@
                 </div>
             </header>
 
+            <div class="toolbar">
+            <input type = "text" placeholder="Search Assets...">
+            <button class = "new-btn">+ New Maintenance</button>
+           </div>
 
+           <div class = "filters">
+            <button class="active">All</button>
+            <button>In Progress</button>
+            <button>Waiting Parts</button>
+            <button>Completed</button>
+           </div>
+           
+           <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Teckit Tag</th>
+                        <th>Asset Tag</th>
+                        <th>Device</th>
+                        <th>Assigned ICT Staff</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                     <tr>
+                        <td>MT-001</td>
+                        <td>ICT-001</td>
+                        <td>Laptop</td>                        
+                        <td>Majed Alotibi</td>
+                        <td>
+                            <span class ="status in-progress-m">
+                                In Progress
+                            </span> 
+                        </td>
+                        <td>
+                            <button class="manage-btn">Manage</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MT-002</td>
+                        <td>ICT-002</td>
+                        <td>PC</td>
+                        <td>Hassan Albuainain</td>
+                        <td>
+                            <span class ="status waiting-parts-m">
+                                Waiting for Parts
+                            </span> 
+                        </td>
+                        <td>
+                            <button class="manage-btn">Manage</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MT-003</td>
+                        <td>ICT-003</td>
+                        <td>Laptop</td>
+                        <td>-</td>
+                        <td>
+                            <span class ="status completed-m">
+                                Completed
+                            </span> 
+                        </td>
+                        <td>
+                            <button class="manage-btn">Manage</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MT-004</td>
+                        <td>ICT-004</td>
+                        <td>PC</td>
+                        <td>Hassan Alboainain</td>
+                        <td>
+                            <span class ="status in-progress-m">
+                                In Progress
+                            </span> 
+                        </td>
+                       <td>
+                            <button class="manage-btn">Manage</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MT-005</td>
+                        <td>ICT-005</td>
+                        <td>Router</td>
+                        <td>-</td>
+                        
+                        <td>
+                            <span class ="status completed-m">
+                                Completed
+                            </span> 
+                        </td>
+                        <td>
+                            <button class="manage-btn">Manage</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+                   
+                
+            </table>
+           </div>
+            </div>
            
         </main>
     </div>

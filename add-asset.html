@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Asset</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link> <rel="preconnect" href="https://fonts.googleapis.com"> </rel=>
+    <link> <rel="preconnect" href="https://fonts.gstatic.com" crossorigin> </rel=>
+
+    <link> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> </link>
+</head>
+<body>
+    <div class="ANABEEB_ICT">
+        <aside class="sidebar">
+
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <h2>ANABEEB ICT </h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class = "active">Dashboard</a></li>
+                    <li><a href="assets.html">Assets</a></li>
+                    <li><a href="requests.html">Device Requests</a></li>
+                    <li><a href="maintenance.html">Maintenance</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+
+        </aside>
+        <main class="main-content">
+
+            <header class="header">
+                <h1>Add Asset</h1>
+                <div class="user-info">
+                    <span>Welcome, Admin</span>
+                </div>
+                <div class="card">
+                    <h2>Asset Information</h2>
+
+                        <label for="asset-tag">Asset Tag:</label>
+                        <input type="text" placeholder="ICT-001">
+
+                        <label>Device Type:</label>
+                        <select id="asset-type" name="asset-type" required>
+                            <option>Select Asset Type</option>
+                            <option>Laptop</option>
+                            <option>Desktop</option>
+                            <option>Tablet</option>
+                            <option>Phone</option>
+                            <option>Printer</option>
+                            <option>Switch</option>
+                            <option>Router</option>
+                            <option>Scanner</option>
+                            <option>Screen</option>
+                            <option>Other</option>
+                        </select>
+
+                        <label for ="asset-brand">Brand:</label>
+                        <select id="asset-brand" name="asset-brand" required>
+                            <option>Select Asset Brand</option>
+                            <option>Dell</option>
+                            <option>HP</option>
+                            <option>Lenovo</option>
+                            <option>Apple</option>
+                            <option>Cissco</option>
+                            <option>Canon</option>
+                            <option>Samasung</option>
+                            <option>Other</option>
+
+                        </select>
+                        <label>Model</label>
+                        <input type="text">
+                        <label>Serial Number</label>
+                        <input type="text">
+
+                    
+                </div>
+
+                 <div class="card">
+                    <h2>Assignment & Location</h2>
+                    
+                        <label>Department</label>
+
+                        <select id="department" name="department" required>
+                            <option>Select Department</option>
+                            <option>ICT</option>
+                            <option>HR</option>
+                            <option>Finance</option>
+                            <option>Operations</option>
+                            <option>Administration</option>                            
+                            <option>Warehouse</option>                            
+                        </select>
+
+                        <label>Location</label>
+                        <select id="location" name="location" required>
+                            <option>Select Location</option>
+                            <option>Warehouse</option>
+                            <option>Head Office</option>
+                            <option>Branch Office</option>
+                            <option>ICT Workshop</option>
+                        </select>
+
+                        <label>Status</label>
+                        <select id="status" name="status" required>
+                            <option>Select Status</option>
+                            <option>Assigned</option>
+                            <option>In Storage</option>
+                            <option>Under Maintenance</option>
+                            <option>Disposed</option>
+                        </select>
+                        
+                </div>
+            </header>
+
+
+        </main>
+    </div>
+</body>
+</html>

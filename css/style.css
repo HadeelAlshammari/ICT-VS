@@ -347,23 +347,23 @@ td{
     background-color: #003F78;
 }
 
-.approved{
+.approved-req{
     background-color: #0057A4;
 }
 
-.pending{
+.pending-req{
     background-color: #ff9900;
 }
 
-.in-progress{
+.in-progress-req{
     background-color: #6C757d;
 }
 
-.rejected{
+.rejected-req{
     background-color: #dc3545;
 }
 
-.completed{
+.completed-req{
     background-color: #28a745;
 }
 
@@ -377,3 +377,34 @@ td{
     font-size: 15px;
 }
 
+.complete-btn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.new-btn{
+    background-color: #0057A4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.in-progress-m{
+    background-color: #003F78;
+}
+
+.waiting-parts-m{
+    background-color: #F7941D;
+}
+
+.completed-m{
+    background-color: #28A745;
+}
