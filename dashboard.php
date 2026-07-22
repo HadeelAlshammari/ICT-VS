@@ -1,0 +1,138 @@
+<?php
+session_start();
+
+            if(!isset($_SESSION['email'])){
+                $_SESSION['email'] = $email;
+                header("Location: login.php");
+                exit();
+            }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link> <rel="preconnect" href="https://fonts.googleapis.com"> </rel=>
+    <link> <rel="preconnect" href="https://fonts.gstatic.com" crossorigin> </rel=>
+
+    <link> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> </link>
+</head>
+<body>
+    <div class="ANABEEB_ICT">
+        <aside class="sidebar">
+
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <h2>ANABEEB ICT </h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class = "active">Dashboard</a></li>
+                    <li><a href="assets.html">Assets</a></li>
+                    <li><a href="requests.html">Device Requests</a></li>
+                    <li><a href="maintenance.html">Maintenance</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+
+        </aside>
+        <main class="main-content">
+
+            <header class="header">
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <span>Welcome, Admin</span>
+                </div>
+            </header>
+
+            <div class ="cards">
+
+                <div class="card">
+                    <h3>Total Assets</h3>
+                    <p>155</p>
+                </div>
+
+                <div class="card">
+                    <h3>Assigned</h3>
+                    <p>120</p>
+                </div>
+
+                <div class="card">
+                    <h3>Under Maintenance</h3>
+                    <p>15</p>
+                </div>
+
+                <div class="card">
+                    <h3>In Storage</h3>
+                    <p>15</p>
+                </div>
+
+                <div class="card">
+                    <h3>Disposed</h3>
+                    <P>5</P>
+                </div>
+
+                <div class="card">
+                    <h3>Pending Requests</h3>
+                    <P>3</P>
+                </div>
+
+            </div>
+
+            <section class="asset-table">
+                <h2>Recent Assets</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Asset Tag</th>
+                            <th>Device</th>
+                            <th>Status</th>
+                            <th>Assigned To</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>ICT-001</td>
+                            <td>Laptop</td>
+                            <td>Under Maintenance</td>
+                            <td>Majed Alotaibi</td>
+                            <td>ICT Workshop</td>
+                        </tr>
+                        <tr>
+                            <td>ICT-002</td>
+                            <td>PC-HP</td>
+                            <td>Under Maintenance</td>
+                            <td>Hassan Albuainain</td>
+                            <td>ICT Workshop</td>
+                        </tr>
+                        <tr>
+                            <td>ICT-003</td>
+                            <td>Laptop</td>
+                            <td>In Storage</td>
+                            <td>-</td>
+                            <td>Storage</td>
+                        </tr>
+                        <tr>
+                            <td>ICT-004</td>
+                            <td>PC-Lenovo ThinkCenter</td>
+                            <td>Assigned</td>
+                            <td>Hadeel Alshammari</td>
+                            <td>Web Development Office</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
