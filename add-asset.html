@@ -38,7 +38,9 @@
                 <div class="user-info">
                     <span>Welcome, Admin</span>
                 </div>
-                <div class="card">
+            </header>
+            
+             <div class="asset-card">
                     <h2>Asset Information</h2>
 
                         <label for="asset-tag">Asset Tag:</label>
@@ -80,11 +82,10 @@
                     
                 </div>
 
-                 <div class="card">
+                 <div class="asset-card">
                     <h2>Assignment & Location</h2>
                     
                         <label>Department</label>
-
                         <select id="department" name="department" required>
                             <option>Select Department</option>
                             <option>ICT</option>
@@ -105,7 +106,7 @@
                         </select>
 
                         <label>Status</label>
-                        <select id="status" name="status" required>
+                        <select required>
                             <option>Select Status</option>
                             <option>Assigned</option>
                             <option>In Storage</option>
@@ -113,9 +114,13 @@
                             <option>Disposed</option>
                         </select>
                         
+                        
                 </div>
-            </header>
 
+                <div class="form-buttons">
+                    <button class="save-asset-btn">Save Asset</button>
+                    <button class="cancel-btn">Cancel</button>
+                </div>
 
         </main>
     </div>
